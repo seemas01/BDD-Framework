@@ -20,6 +20,7 @@ public class OtherSteps {
         System.out.println(world.response.getBody());
 
     }
+
     @Given("login to analyst hub using {string}")
     public void loginToAnalystHubUsing(String id) {
         String serviceUrl = "http://ftc-lbdkrapp204.ad.moodys.net:4211/aop/analyst/"+id+"/issuers";

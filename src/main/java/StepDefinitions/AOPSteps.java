@@ -71,4 +71,10 @@ public class AOPSteps {
         // put logging and transaction steps here
     }
 
+    @Given("service {string} is launched for analyst {string}")
+    public void serviceIsLaunchedForAnalyst(String URI, String analystID) {
+        String serviceUrl = URI+analystID;
+        world.response = (ResponseEntity<String>) world.restTemplate.exchange(serviceUrl, HttpMethod.GET, new HttpEntity<String>(world.header1), String.class);
+        System.out.println(world.response.getBody());
+    }
 }

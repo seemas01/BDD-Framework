@@ -21,6 +21,7 @@ Feature: AUH service validation
     |ID|
     |29003272|
 
+
   @URI
   Scenario Outline: Test outline for uri
     Given service "<URI>" is launched
@@ -29,3 +30,12 @@ Feature: AUH service validation
     Examples:
       |URI|
       |http://ftc-lbdkrapp204.ad.moodys.net:4211/aop/analyst/29003272/issuers|
+
+  Scenario Outline: Test outline for uri and analyst ID
+    Given service "<URI>" is launched for analyst "<AnalystID>"
+    Then status code is OK
+    And xyz
+    Examples:
+      |URI|AnalystID|
+      |http://ftc-lbdkrapp204.ad.moodys.net:4211/aop/analyst/|29003272/issuers|
+

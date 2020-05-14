@@ -8,22 +8,22 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.util.Map;
 
 public class Dummy {
-    static int var =10;
+    static int var = 10;
 
-    public static void main(String[] args) throws IOException, ParseException {
-        JSONParser jsonParser = new JSONParser();
+    public static void main(String[] args) throws IOException, ParseException, InterruptedException {
+        /*JSONParser jsonParser = new JSONParser();
         FileReader reader = new FileReader("C:\\SampleProjects\\TestData\\AOP.json");
         JSONObject jsonObject = (JSONObject) jsonParser.parse(reader);
 
         JSONArray employeeList = (JSONArray) jsonObject.get("TC_01");
-        System.out.println(employeeList.toString());
+        System.out.println(employeeList.toString());*/
 
-       // JSONObject employeeList =  (JSONObject) obj;
-       // System.out.println(employeeList.get("TC_01").toString());
+        // JSONObject employeeList =  (JSONObject) obj;
+        // System.out.println(employeeList.get("TC_01").toString());
+
     }
 }

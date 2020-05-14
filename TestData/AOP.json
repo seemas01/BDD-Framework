@@ -1,8 +1,6 @@
 {
 
-  "Name": "crunchify.com",
-  "Author": "App Shah",
-  "TC_01": [
+    "TC_01": [
     "url : http://ftc-lbdkrapp204.ad.moodys.net:4211/aop/analyst/29003272/issuers"
   ]
 }
