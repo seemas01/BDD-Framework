@@ -8,12 +8,13 @@ import org.springframework.web.client.RestTemplate;
 import java.io.IOException;
 
 public class World {
-    ResponseEntity response = null;
-    HttpHeaders header1 = new HttpHeaders();
-    RestTemplate restTemplate = new RestTemplate();
-    String apiKeyVal = Utils.generateAccessToken("singhs4");
 
-   // Scenario scenario = new Scenario();
+
+    public ResponseEntity response = null;
+    public HttpHeaders header1 = new HttpHeaders();
+    public RestTemplate restTemplate = new RestTemplate();
+    public String apiKeyVal = Utils.generateAccessToken("singhs4");
+
 
     public World() throws IOException {
     }
